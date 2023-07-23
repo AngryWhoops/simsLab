@@ -27,20 +27,18 @@ namespace api.Models
     public class Post
     {
         public long Id { get; set; }
-        public PostType? Type { get; set; }
-        public User? User { get; set; }
-        [MaxLength(100)]
-        public string? Head { get; set; }
-        [MaxLength(300)]
-        public string? Description { get; set; }
-        public int? Width { get; set; }
-        public int? Hight { get; set; }
-        public List<Tag> Tags { get; set; } = new();
-        public GroundType? GroundType { get; set; }
+        public required PostType Type { get; set; }
+        public DateTime CreatedAt { get; set; }
+        public DateTime UpdatedAt { get; set; }
+        public required User User { get; set; }
+        public required string Title { get; set; }
+        public required string Description { get; set; }
+        public required int Width { get; set; }
+        public required int Hight { get; set; }
+        public required List<Tag> Tags { get; set; } = null!;
+        public required GroundType? GroundType { get; set; }
         public PostPrewiew? Prewiew { get; set; }
-        public File File { get; set; } = new();
-        [MinLength(1)]
-        [MaxLength(10)]
+        public AppFile AppFile { get; set; } = new();
         public List<Image>? Images { get; set; }
     }
 }

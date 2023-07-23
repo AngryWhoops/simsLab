@@ -6,5 +6,6 @@ namespace api.Models
         public string? Small { get; set; }
         public string? Medium { get; set; }
         public string? Large { get; set; }
+        public required Post Post { get; set; }
     }
 }

@@ -9,6 +9,6 @@ namespace api.Models
     {
         public long Id { get; set; }
         public string? Name { get; set; }
-        public List<Post> PlotPosts { get; set; } = new();
+        public List<Post> Posts { get; set; } = new();
     }
 }
