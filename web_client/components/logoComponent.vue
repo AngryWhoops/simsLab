@@ -7,7 +7,7 @@
 </template>
 
 <script>
-
+// Тест гитлаб пуш
 </script>
 
 <style scoped lang="sass">
