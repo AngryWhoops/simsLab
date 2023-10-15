@@ -2,10 +2,10 @@
   <div class="wrapper">
     <header class="header">
       <logoComponent></logoComponent>
+      <burgerComponent></burgerComponent>
     </header>
     <div class="container">
       <lkFeaturesComponent></lkFeaturesComponent>
-      <burgerComponent></burgerComponent>
     </div>
   </div>
   
@@ -17,9 +17,7 @@ import lkFeaturesComponent from '@/components/lkFeaturesComponent.vue';
 import burgerComponent from '@/components/burgerComponent.vue';
 
 export default {
-  data() {
-    return;
-  },
+  
   components: {
     logoComponent,
     lkFeaturesComponent,
@@ -34,10 +32,11 @@ export default {
 .header
   display: flex
   justify-content: center
+  align-items: center
   padding: 20px 0
-
 .container
   display: flex
   width: 95%
   margin: 0 auto
+  justify-content: space-between
 </style>
